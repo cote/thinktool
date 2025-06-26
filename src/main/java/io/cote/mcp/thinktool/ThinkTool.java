@@ -12,8 +12,9 @@ import org.springframework.stereotype.Service;
  * More <a href="https://simonwillison.net/2025/Mar/21/the-think-tool/">background here</a>.
  *
  * The thinking tool just takes the input and returns it. This gives the MCP Client the chance to use it
- * as a scratchpad - it takes time to think something when it makes the tool call, generates the thought, and then
- * puts it in the context window for later.
+ * as a scratchpad - it takes "time" to think something when it makes the tool call, generates the thought, and then
+ * puts it in the context window for later. Depending on the UI implimentation, this also means that the user
+ * does not see the result of the thinking.
  */
 @Service
 public class ThinkTool {
@@ -29,7 +30,7 @@ public class ThinkTool {
                     """)
     public String think(@ToolParam(description= "Your thoughts", required = true)
                         String thoughts) {
-        logger.info("ThinkTool called with thoughts: {}", thoughts);
+        logger.debug("ThinkTool called with thoughts: {}", thoughts);
         return "I'm thinking about <thoughts>" + thoughts + "</thoughts>";
     }
 
