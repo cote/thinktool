@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "io.cote.ThinkTool": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "/Users/cote/projects/thinktool/target/thinktool-0.0.1-SNAPSHOT.jar"
+      ],
+      "env": {}
+    }
+  }
+}
