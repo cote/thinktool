@@ -1,3 +1,7 @@
 A "thinking tool" based on
-<a href="https://www.anthropic.com/engineering/claude-think-tool">the Anthropic blog post on this topic</a>. 
-More <a href="https://simonwillison.net/2025/Mar/21/the-think-tool/">background here</a>.
+[the Anthropic blog post on this topic](https://www.anthropic.
+com/engineering/claude-think-tool). 
+More [background here](https://simonwillison.net/2025/Mar/21/the-think-tool/).
+
+Written as a [Spring AI MCP tool](https://docs.spring.
+io/spring-ai-mcp/reference/spring-mcp.html), using STDIO.
