@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 public class ThinktoolApplication {
 
 	@Bean
-	public ToolCallbackProvider oracle(ThinkTool tool) {
+	public ToolCallbackProvider thinktool(ThinkTool tool) {
 		return MethodToolCallbackProvider.builder().toolObjects(tool).build();
 	}
 
