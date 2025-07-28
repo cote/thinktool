@@ -6,7 +6,7 @@
         "-jar",
         "/Users/cote/projects/thinktool/target/thinktool-0.0.1-SNAPSHOT.jar"
       ],
-      "env": {}
+      "env": {"LOGGING_LEVEL_IO_COTE_THINKTOOL": "DEBUG"}
     }
   }
 }
