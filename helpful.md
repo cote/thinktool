@@ -19,3 +19,11 @@ Claude's directory is:
 Running the MCP inspector:
 
 ```npx @modelcontextprotocol/inspector java -jar /Users/cote/projects/easychatdm/target/easychatdm-0.0.2-SNAPSHOT.jar```
+
+Turn debugging logging on for CF instance:
+
+cf set-env thinktool LOGGING_LEVEL_IO_COTE_MCP_THINKTOOL DEBUG
+
+And then:
+
+cf restage thinktool
