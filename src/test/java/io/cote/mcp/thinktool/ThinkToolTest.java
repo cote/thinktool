@@ -10,7 +10,8 @@ public class ThinkToolTest {
     void testThinkReturnsFormattedThought() {
         ThinkTool tool = new ThinkTool();
         String input = "the unit test would like me to think about testing the Thinking tool";
-        String result = tool.think(input);
+        // We don't need the ToolContext here...
+        String result = tool.think(input, null);
         assertEquals("I'm thinking about <thoughts>"+input+"</thoughts>", result);
     }
 }
