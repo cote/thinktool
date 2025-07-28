@@ -5,4 +5,4 @@ applications:
     env:
       BP_JAVA_VERSION: '21'
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 21.+ } }'
-      SPRING_CONFIG_NAME: sse
+      SPRING_PROFILES_ACTIVE: sse
